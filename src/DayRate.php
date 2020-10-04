@@ -1,13 +1,13 @@
 <?php
 
-namespace DayRate\Model;
+namespace DayRate;
 
 use DateTime;
 
 /**
  * Class DayRate
  *
- * @package DayRate\Model
+ * @package DayRate
  */
 class DayRate
 {

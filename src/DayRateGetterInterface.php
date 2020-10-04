@@ -3,8 +3,6 @@
 namespace DayRate;
 
 use DateTime;
-use DayRate\Model\Currency;
-use DayRate\Model\DayRate;
 
 /**
  * Interface DayRateGetterInterface
@@ -16,9 +14,9 @@ interface DayRateGetterInterface
     /**
      * @param DateTime $dateTime
      * @param Currency $quoteCurrency
-     * @param Currency|null $baseCurrency
+     * @param Currency $baseCurrency
      *
-     * @return DayRate[]
+     * @return DayRate
      */
-    public function getList(DateTime $dateTime, Currency $quoteCurrency, ?Currency $baseCurrency = null): array;
+    public function get(DateTime $dateTime, Currency $quoteCurrency, Currency $baseCurrency): ?DayRate;
 }

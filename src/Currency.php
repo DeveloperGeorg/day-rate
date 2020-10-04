@@ -1,11 +1,11 @@
 <?php
 
-namespace DayRate\Model;
+namespace DayRate;
 
 /**
  * Class Currency
  *
- * @package DayRate\Model
+ * @package DayRate
  */
 class Currency
 {
@@ -13,6 +13,16 @@ class Currency
      * @var string
      */
     private $code;
+
+    /**
+     * Currency constructor.
+     *
+     * @param string $code
+     */
+    public function __construct(string $code)
+    {
+        $this->setCode($code);
+    }
 
     /**
      * @return string
